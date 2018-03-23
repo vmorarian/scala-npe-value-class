@@ -4,9 +4,9 @@ import npe.Target
 
 object TestNPE {
   def main(args: Array[String]): Unit = {
-    val target = new Target[Key, Value]
+    val target = new Target[String, Value]
 
-    val keyO = Option(new Key("key"))
+    val keyO = Option("key")
 
     //works
     keyO
