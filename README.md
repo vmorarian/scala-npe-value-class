@@ -1,8 +1,21 @@
 Isolated test to reproduce NPE in value class on calling null'able Java method
 
 
+# NPE
 
-````
+```
+Exception in thread "main" java.lang.NullPointerException
+    at example.TestNPE$.$anonfun$main$2(TestNPE.scala:17)
+    at example.TestNPE$.$anonfun$main$2$adapted(TestNPE.scala:17)
+    at scala.Option.map(Option.scala:146)
+    at example.TestNPE$.main(TestNPE.scala:17)
+    at example.TestNPE.main(TestNPE.scala)
+
+```
+
+# Generated code 
+
+```
  // TestNPE.scala
 package example {
   object TestNPE extends Object {
