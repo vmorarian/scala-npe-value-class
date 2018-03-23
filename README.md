@@ -1,5 +1,6 @@
-Isolated test to reproduce NPE in value class on calling null'able Java method
-
+# Problem
+Nullable method (may return `null`, for instance Java interop) with return type of [value class](http://docs.scala-lang.org/sips/completed/value-classes.html) 
+may cause `NullPointerException` in specific cases.
 
 # NPE
 
